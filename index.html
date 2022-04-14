@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Index</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="index">
+      <div class="index__contents">
+        <div class="index__inner-contents">
+          <h1>Masukkan identitas</h1>
+          <form action="./components/auth.php" method="post" onsubmit="login()">
+            <label for="nama">Username:</label>
+            <input id="nama" type="text" class="nama" name="nama" />
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" id="email" /><br />
+            <input name="masuk" type="submit" value="Masuk" />
+          </form>
+        </div>
+      </div>
+      <div class="index__image">
+        <!-- <img src="./assets/img/cliff-big.jpg" alt="cliff" /> -->
+      </div>
+    </div>
+    <!-- Username: <input type="text" name="usr"><br>
+    Password: <input type="text" name="pwd">
+    <form method="POST" action="f2.php">
+        Masukkan Banyaknya Mahasiswa <input type="text" name="n" /> 
+        <input type="submit" name="submit" value="Submit" /> 
+    </form> -->
+    <script src="script.js"></script>
+  </body>
+</html>
