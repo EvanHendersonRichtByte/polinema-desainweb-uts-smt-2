@@ -10,3 +10,7 @@ session_start();
 // print_r("location: " . $path . "/dashboard.php");
 
 // session_destroy();
+// $realpath    = str_replace('\\', '/', dirname(__FILE__));
+
+$path = preg_replace('/.*htdocs\\\/i', "", dirname(__FILE__));
+echo $path;
