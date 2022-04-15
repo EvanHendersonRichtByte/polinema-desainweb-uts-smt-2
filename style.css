@@ -141,7 +141,7 @@ html {
   position: absolute;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .dashboard__content {
@@ -159,7 +159,11 @@ html {
   display: flex;
   justify-content: end;
   color: var(--light);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+}
+
+.dashboard__user div > * {
+  margin-top: 1rem;
 }
 
 .dashboard__greet {
@@ -170,7 +174,9 @@ html {
   z-index: inherit;
   flex-basis: 20%;
   min-height: 40rem;
-  background-color: var(--light);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--dark);
+  border-radius: 1rem;
 }
 
 .dashboard__sidebar ul {
@@ -184,7 +190,7 @@ html {
 
 .dashboard__sidebar li {
   width: 100%;
-  padding: 2.2rem;
+  padding: 2.5rem;
   position: relative;
 }
 
@@ -196,10 +202,20 @@ html {
   top: 0;
   left: 0;
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
   justify-content: start;
   align-items: center;
   transition: all 0.2s;
+}
+
+.dashboard__sidebar ul li a.dashboard__list--top::after {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.dashboard__sidebar ul li a.dashboard__list--bottom::after {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .dashboard__sidebar li a::after {
@@ -210,7 +226,7 @@ html {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: var(--secondary);
+  background-color: rgba(36, 94, 86, 0.8);
   transition: all 0.2s;
 }
 

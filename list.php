@@ -28,10 +28,6 @@
                 </thead>
                 <tbody>
                     <?php
-                    // if (!$_SESSION['totaluser']) {
-                    //     $Message = urlencode("Some error occured please try after some time ");
-                    //     header('location: add.php');
-                    // }
                     foreach ($_SESSION['pasien'] as $result => $val) {
                         $bmi = $val['berat_badan'] / (($val['tinggi_badan'] / 100) * ($val['tinggi_badan'] / 100)); ?>
                         <tr>
@@ -58,7 +54,7 @@
                                 ?>
                             </td>
                             <td>
-                                <!-- <form action="" method="POST" onsubmit="del()"><button class="delete" type="submit" name="delete" value=<?php echo $result ?>>Delete</button></form> -->
+                                <!-- <orm action="" method="POST" onsubmit="del()"><button class="delete" type="submit" name="delete" value=<?php echo $result ?>>Delete</button></form> -->
                                 <form action="" method="POST"><button class="delete" type="submit" name="delete" value=<?php echo $result ?>>Delete</button></form>
                             </td>
                         </tr>
@@ -67,14 +63,6 @@
             </table>
         </div>
     </section>
-    <!-- <script>
-        function del() {
-            if (confirm('Apakah anda yakin?') == true) {
-                alert("Data dihapus!")
-            } else alert("Data tidak dihapus!")
-            // location.reload();
-        }
-    </script> -->
     <?php
     if (isset($_POST['delete'])) {
         unset($_SESSION['pasien'][$_POST['delete']]);

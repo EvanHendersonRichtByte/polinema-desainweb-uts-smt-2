@@ -16,13 +16,13 @@
             <aside class="dashboard__sidebar">
                 <ul>
                     <div>
-                        <li><a href="/uts/dashboard.php">Dashboard</a></li>
+                        <li><a class="dashboard__list--top" href="/uts/dashboard.php">Dashboard</a></li>
                         <li><a href="/uts/add.php">Tambah Data</a></li>
                         <li><a href="/uts/list.php">List Data</a></li>
                         <li><a href="/uts/bmi_calculator.php">BMI Calculator</a></li>
                     </div>
                     <div>
-                        <li><a href="/uts">Logout</a></li>
+                        <li><a class="dashboard__list--bottom" href="/uts">Logout</a></li>
                     </div>
                 </ul>
             </aside>
@@ -37,17 +37,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <form action="f2.php" method="POST">
-            <button type="submit" name="tData" value="1">Tes Input</button>
-        </form> -->
     </section>
-    <script src="script.js"></script>
-
-    <script>
-        // login()
-    </script>
 </body>
-
 </html>

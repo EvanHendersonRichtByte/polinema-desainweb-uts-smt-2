@@ -1,6 +1,5 @@
 <?php
 session_start();
-// $path = preg_replace('/.*htdocs\\\/i', "", dirname(__FILE__));
 include dirname(__DIR__, 1) . '\config.php';
 if (isset($_POST['masuk'])) {
     $username = $_POST['nama'];

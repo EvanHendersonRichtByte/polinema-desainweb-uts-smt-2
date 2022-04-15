@@ -44,8 +44,6 @@
         $jk = $_POST['jk'];
         $tinggi_badan = $_POST['tinggi_badan'];
         $berat_badan = $_POST['berat_badan'];
-        // if (!$_SESSION['totaluser']) $_SESSION['totaluser'] = 1;
-        // else $_SESSION['totaluser'] = $_SESSION['totaluser'] + 1;
         $_SESSION['pasien'][] = array("nama" => $nama, "no_pasien" => $no_pasien, "jenis_kelamin" => $jk, "no_telp" => $no_telp, "tinggi_badan" => $tinggi_badan, "berat_badan" => $berat_badan);
     ?>
         <script>
