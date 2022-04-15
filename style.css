@@ -43,28 +43,35 @@ html {
   align-items: center;
   min-height: 100vh;
   flex-wrap: wrap;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(./assets/img/cliff.jpg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .index__contents {
-  flex-basis: 50%;
+  position: fixed;
+  min-width: 50%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .index__inner-contents {
-  padding: 20px;
+  padding: 40px;
   /* opacity: 0.5; */
+  background: rgba(255, 255, 255, 0.8);
+
   border-radius: 14px 50px;
-  background-color: #eeeedd;
+  /* background-color: #eeeedd; */
   width: 50%;
 }
 
@@ -95,6 +102,9 @@ html {
   color: var(--light);
   padding: 1rem 4rem;
   border: none;
+  border-bottom-left-radius: 2.2rem;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
 }
 
 .index__inner-contents input table {
@@ -103,11 +113,11 @@ html {
 }
 
 .index__image {
-  /* flex-basis: 50%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   height: 100%;
-  /* margin-left: auto; */
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 .index__image img {
@@ -249,7 +259,9 @@ nav ul span li {
   margin-top: 2rem;
 }
 
-.add__content form input {
+.add__content form input,
+.add__content form select,
+.add__content form option {
   margin: 1rem 0 2rem 0;
   padding: 1rem;
 }
@@ -266,6 +278,10 @@ nav ul span li {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
+}
+
+.list__content {
+  overflow: auto;
 }
 
 .list__content h1 {

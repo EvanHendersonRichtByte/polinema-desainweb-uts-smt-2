@@ -3,6 +3,7 @@ function login() {
     alert(document.querySelector(".dashboard__greet").innerHTML);
   } catch (error) {}
 }
-function data(){
+function hapusData(){
   
 }
+

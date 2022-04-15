@@ -15,15 +15,20 @@
             <h1>Tambah Pasien</h1>
             <form action="" method="POST">
                 <label for="nama">Nama</label>
-                <input type="text" name="nama" id="nama">
+                <input type="text" name="nama" id="nama" required>
                 <label for="no_pasien">No Pasien</label>
-                <input type="text" name="no_pasien" id="no_pasien">
+                <input type="number" name="no_pasien" id="no_pasien" required min="1">
                 <label for="no_telp">No Telp</label>
-                <input type="text" name="no_telp" id="no_telp">
-                <label for="tinggi_badan">Tinggi Badan</label>
-                <input type="number" name="tinggi_badan" id="tinggi_badan">
+                <input type="number" name="no_telp" id="no_telp" required>
+                <label for="jk">Jenis Kelamin</label>
+                <select name="jk" id="jk" required>
+                    <option value="Pria" selected>Pria</option>
+                    <option value="Wanita">Wanita</option>
+                </select>
+                <label for="tinggi_badan">Tinggi Badan (cm)</label>
+                <input type="number" name="tinggi_badan" id="tinggi_badan" required>
                 <label for="berat_badan">Berat Badan</label>
-                <input type="number" name="berat_badan" id="berat_badan">
+                <input type="number" name="berat_badan" id="berat_badan" required>
                 <button name="submit" type="submit">Tambah</button>
             </form>
         </div>
@@ -36,12 +41,17 @@
         $nama = $_POST['nama'];
         $no_pasien = $_POST['no_pasien'];
         $no_telp = $_POST['no_telp'];
+        $jk = $_POST['jk'];
         $tinggi_badan = $_POST['tinggi_badan'];
         $berat_badan = $_POST['berat_badan'];
         // if (!$_SESSION['totaluser']) $_SESSION['totaluser'] = 1;
         // else $_SESSION['totaluser'] = $_SESSION['totaluser'] + 1;
-        $_SESSION['pasien'][] = array("nama" => $nama, "no_pasien" => $no_pasien, "no_telp" => $no_telp, "tinggi_badan" => $tinggi_badan, "berat_badan" => $berat_badan);
-        echo 'session set';
+        $_SESSION['pasien'][] = array("nama" => $nama, "no_pasien" => $no_pasien, "jenis_kelamin" => $jk, "no_telp" => $no_telp, "tinggi_badan" => $tinggi_badan, "berat_badan" => $berat_badan);
+    ?>
+        <script>
+            alert('data telah ditambah');
+        </script>
+    <?php
     }
     ?>
 </body>

@@ -38,9 +38,9 @@
         </div>
 
 
-        <form action="f2.php" method="POST">
+        <!-- <form action="f2.php" method="POST">
             <button type="submit" name="tData" value="1">Tes Input</button>
-        </form>
+        </form> -->
     </section>
     <script src="script.js"></script>
 

@@ -12,5 +12,5 @@ session_start();
 // session_destroy();
 // $realpath    = str_replace('\\', '/', dirname(__FILE__));
 
-$path = preg_replace('/.*htdocs\\\/i', "", dirname(__FILE__));
-echo $path;
+// $path = preg_replace('/.*htdocs\\\/i', "", dirname(__FILE__));
+// echo $path;
