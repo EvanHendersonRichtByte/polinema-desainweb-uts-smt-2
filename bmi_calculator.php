@@ -28,7 +28,7 @@
       </div>
       <div class="hasil hidden">
         <h2 id="hasil__header">Hasil</h2>
-        <p>Berat Badan : <span id="hasil__bmi">30</span></p>
+        <p>Index Massa Tubuh : <span id="hasil__bmi">30</span></p>
         <p>Kategori : <span id="hasil__badan">Kegemukan</span></p>
       </div>
     </div>
