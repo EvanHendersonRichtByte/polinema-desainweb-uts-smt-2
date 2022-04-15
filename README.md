@@ -2,7 +2,7 @@
 
 ### Alat untuk membantu para petugas dalam melakukan pendataan pasien
 
-#### Sistem ini dikembangkan menggunakan bahasa pemrograman [PHP](https://www.php.net/)
+#### Sistem ini dikembangkan menggunakan bahasa pemrograman [PHP](https://www.php.net/) [HTML](https://html.com/) [CSS](https://en.wikipedia.org/wiki/CSS) [JS](https://www.javascript.com/)
 
 ### Fitur
 
@@ -16,5 +16,5 @@
 
 ### Anggota Tim
 
-[Galur Arasy L.](https://github.com/EvanHendersonRichtByte/)<br/>
-[Ibnu Tsalis A.](https://github.com/i9191)<br/>
+[Galur Arasy L. - 2131710136](https://github.com/EvanHendersonRichtByte/)<br/>
+[Ibnu Tsalis A. - 2131710073](https://github.com/i9191)<br/>
