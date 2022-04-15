@@ -314,6 +314,56 @@ nav ul span li {
   border: none;
 }
 
+.bmi-calculator {
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 2rem;
+}
+
+.bmi-calculator__contents {
+  min-width: 25%;
+}
+
+.bmi-calculator__contents div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-calculator__contents div label {
+  margin: 1rem 0;
+}
+
+.bmi-calculator__contents div input,
+.bmi-calculator__contents div select {
+  padding: 0.8rem;
+}
+
+.bmi-calculator__contents div button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.bmi-calculator__contents .hasil {
+  border-top: 1px solid var(--primary);
+  margin-top: 2rem;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.bmi-calculator__contents .hasil.hidden {
+  opacity: 0;
+}
+
+.bmi-calculator__contents .hasil p {
+  margin-top: 1rem;
+}
+
 a:link,
 a:active,
 a:visited {
